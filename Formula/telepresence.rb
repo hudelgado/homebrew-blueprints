@@ -1,5 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
 class Telepresence < Formula
   include Language::Python::Virtualenv
 
@@ -10,8 +8,8 @@ class Telepresence < Formula
   license "Apache-2.0"
 
   depends_on "python"
-  depends_on "torsocks"
   depends_on "sshfs"
+  depends_on "torsocks"
 
   def install
     bin.install "bin/telepresence"
